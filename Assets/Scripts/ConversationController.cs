@@ -18,7 +18,6 @@ public class ConversationController : MonoBehaviour
     public TextButton BaseOption;
     public int NumOptions;
     public float SeperatorSize;
-    public GameObject GameOverScreen;
     public Text GameOverText;
     public GameObject WinButton;
     private List<ConversationButton> conversationButtons = new List<ConversationButton>();
@@ -74,7 +73,7 @@ public class ConversationController : MonoBehaviour
             TalkAnimation.Active = false;
             DeathAnimation.Active = true;
             Destroy(gameObject);
-            GameOverScreen.SetActive(true);
+            StateController.Lose();
             GameOverText.text = ConversationDatas[current].Options[id].Fail;
         }
     }

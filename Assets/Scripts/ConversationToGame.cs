@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class ConversationToGame : MonoBehaviour
 {
-    public List<GameObject> ConversationObjects;
-    public List<GameObject> GameObjects;
+    public StateController StateController;
 
     public void Click()
     {
-        ConversationObjects.ForEach(a => a.SetActive(false));
-        GameObjects.ForEach(a => a.SetActive(true));
+        StateController.SetStateToGame();
     }
 }

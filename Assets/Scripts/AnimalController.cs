@@ -47,4 +47,12 @@ public abstract class AnimalController : MonoBehaviour
         workingVelocity.y = Rigidbody.velocity.y;
         Rigidbody.velocity = workingVelocity;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+            StateController.Lose();
+        }
+    }
 }
