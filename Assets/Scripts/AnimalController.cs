@@ -20,7 +20,7 @@ public abstract class AnimalController : MonoBehaviour
         {
             RotateAction(Control.GetAxis(Control.Axis.X) * RotateSpeed * Time.deltaTime);
         }
-        if (Control.GetAxis(Control.Axis.Y) != 0)
+        if (Control.GetAxis(Control.Axis.Y) > 0)
         {
             MoveAction(Control.GetAxis(Control.Axis.Y) * MoveSpeed);
             WalkAnimation.Active = true;
