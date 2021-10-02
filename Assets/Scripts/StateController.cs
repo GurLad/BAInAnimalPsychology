@@ -20,6 +20,10 @@ public class StateController : MonoBehaviour
         {
             SetStateToGame();
         }
+        else
+        {
+            CrossfadeMusicPlayer.Instance.Play(LevelName + "Convo");
+        }
     }
 
     public void SetStateToGame()
@@ -27,6 +31,7 @@ public class StateController : MonoBehaviour
         state = LevelName;
         ConversationObjects.ForEach(a => a.SetActive(false));
         GameObjects.ForEach(a => a.SetActive(true));
+        CrossfadeMusicPlayer.Instance.Play(LevelName + "Game");
     }
 
     public static void Lose()
