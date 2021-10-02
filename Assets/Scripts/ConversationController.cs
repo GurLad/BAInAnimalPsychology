@@ -5,17 +5,22 @@ using UnityEngine.UI;
 
 public class ConversationController : MonoBehaviour
 {
+    [Header("Data")]
+    public List<ConversationData> ConversationDatas;
+    [TextArea]
+    public string WinText;
+    [Header("Animations")]
+    public AdvancedAnimation DeathAnimation;
+    public AdvancedAnimation IdleAnimation;
+    public AdvancedAnimation TalkAnimation;
+    [Header("Objects")]
     public Text AnimalText;
     public TextButton BaseOption;
     public int NumOptions;
     public float SeperatorSize;
     public GameObject GameOverScreen;
     public Text GameOverText;
-    public AdvancedAnimation DeathAnimation;
-    public AdvancedAnimation IdleAnimation;
-    public AdvancedAnimation TalkAnimation;
-    [Header("Data")]
-    public List<ConversationData> ConversationDatas;
+    public GameObject WinButton;
     private List<ConversationButton> conversationButtons = new List<ConversationButton>();
     private int current;
 
@@ -37,10 +42,23 @@ public class ConversationController : MonoBehaviour
     private void ShowConversation(int id)
     {
         current = id;
-        AnimalText.text = ConversationDatas[current].AnimalText;
-        for (int i = 0; i < NumOptions; i++)
+        if (current < ConversationDatas.Count)
         {
-            conversationButtons[i].TextButton.Text.text = ConversationDatas[current].Options[i].Option;
+            AnimalText.text = ConversationDatas[current].AnimalText;
+            for (int i = 0; i < NumOptions; i++)
+            {
+                conversationButtons[i].TextButton.Text.text = ConversationDatas[current].Options[i].Option;
+            }
+        }
+        else
+        {
+            AnimalText.text = WinText;
+            for (int i = 0; i < NumOptions; i++)
+            {
+                conversationButtons[i].gameObject.SetActive(false);
+            }
+            Destroy(this);
+            WinButton.SetActive(true);
         }
     }
 
@@ -65,6 +83,7 @@ public class ConversationController : MonoBehaviour
 [System.Serializable]
 public class ConversationData
 {
+    [TextArea]
     public string AnimalText;
     public AudioClip VoiceActing;
     public List<OptionData> Options;
