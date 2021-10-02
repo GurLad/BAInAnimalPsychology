@@ -47,8 +47,8 @@ Shader "Custom/Water1"
         {
             // Albedo comes from a texture tinted by color
             float2 originPos = IN.uv_MainTex;
-            originPos.x += _Time[0] * _Speed;
-            originPos.y += _Time[0] * _Speed;
+            originPos.x += _Time[0] * _Speed + tex2D(_Noise, float2(originPos.x - _Time[0] * _Speed, originPos.y - _Time[0] * _Speed)).r / 20;
+            originPos.y += _Time[0] * _Speed + tex2D(_Noise, float2(originPos.y + 42 - _Time[0] * _Speed, originPos.x + 76 - _Time[0] * _Speed)).r / 20;
             fixed4 col = tex2D (_MainTex, originPos) * _Color;
             float2 pos = IN.uv_MainTex;
             pos.x += tex2D(_Noise, float2(originPos.x + _Time[0] * _Speed, originPos.y - _Time[0] * _Speed)).r;
