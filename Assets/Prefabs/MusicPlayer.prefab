@@ -50,6 +50,10 @@ MonoBehaviour:
     AudioClip: {fileID: 8300000, guid: 521fb7f8527eb4f4e88e7bd0c145b835, type: 3}
   - Name: PenguinGame
     AudioClip: {fileID: 8300000, guid: d7bb33cf10df3764ab7001b6422eb8bc, type: 3}
+  - Name: OstrichConvo
+    AudioClip: {fileID: 8300000, guid: c6d555287fb938645b14725e3fd0f8ea, type: 3}
+  - Name: OstrichGame
+    AudioClip: {fileID: 8300000, guid: d30ae4f5da4a1c845b4007d672960cf5, type: 3}
   FadeSpeed: 1
   Volume: 1
   PlayOnStart: 0

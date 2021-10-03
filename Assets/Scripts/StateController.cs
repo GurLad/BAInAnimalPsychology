@@ -59,4 +59,12 @@ public class StateController : MonoBehaviour
         checkpointRot = rotation;
         Debug.Log(checkpointPos);
     }
+
+    public static void ResetState()
+    {
+        checkpointPos = Vector3.zero;
+        checkpointRot = Vector3.zero;
+        state = "";
+        current = null;
+    }
 }
