@@ -1658,12 +1658,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: WinTime
-      value: 0
+      value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: WinAudio
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 5b0a0248121a24e4eb1ca05901832569, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: IdleAnimation
       value: 
@@ -1690,7 +1690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[0].TalkLength
-      value: 0
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[1].AnimalText
@@ -1698,7 +1698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[1].TalkLength
-      value: 0
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[2].AnimalText
@@ -1706,7 +1706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[2].TalkLength
-      value: 0
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[3].AnimalText
@@ -1714,32 +1714,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[3].TalkLength
-      value: 0
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[4].AnimalText
-      value: What is the ostrich's favourite color?
+      value: What is the ostrich's favourite colour?
+      objectReference: {fileID: 0}
+    - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
+      propertyPath: ConversationDatas.Array.data[4].TalkLength
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[5].AnimalText
       value: Well done. Lastly, what did you learn from this adventure?
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
+      propertyPath: ConversationDatas.Array.data[5].TalkLength
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[0].VoiceActing
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 4d19e4358d399a64ea70d4b157b300d7, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[1].VoiceActing
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 322fe0e8f7fae974bb1d21ad0aefd5d2, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[2].VoiceActing
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: fb2706fed6c164e479c8aa0fe7931d4f, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[3].VoiceActing
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 1af52a7f3489fa64baa4a2480f990bd4, type: 3}
+    - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
+      propertyPath: ConversationDatas.Array.data[4].VoiceActing
+      value: 
+      objectReference: {fileID: 8300000, guid: 2dd75a541f087d84ab8358dfd35bc05a, type: 3}
+    - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
+      propertyPath: ConversationDatas.Array.data[5].VoiceActing
+      value: 
+      objectReference: {fileID: 8300000, guid: c4e9336e1237ff1458c4e68b7ec3529b, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[0].Options.Array.size
       value: 4
@@ -2040,6 +2056,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ChangeScene, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 49807588119131807, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
+      propertyPath: LoseSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 4205b27cc3c420b49b22adda25e6fe11, type: 3}
     - target: {fileID: 49807588119131807, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: LevelName
       value: Endgame
