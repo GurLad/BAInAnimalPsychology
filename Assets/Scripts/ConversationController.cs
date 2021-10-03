@@ -63,7 +63,6 @@ public class ConversationController : MonoBehaviour
         if (current < ConversationDatas.Count)
         {
             AnimalText.text = ConversationDatas[current].AnimalText;
-            Debug.Log(ConversationDatas[current].VoiceActing.name);
             audioSource.Stop();
             audioSource.PlayOneShot(ConversationDatas[current].VoiceActing);
             if ((count = ConversationDatas[current].TalkLength) > 0)
@@ -106,7 +105,7 @@ public class ConversationController : MonoBehaviour
             IdleAnimation.Active = false;
             TalkAnimation.Active = false;
             EndTalkAnimation.Active = false;
-            DeathAnimation.Active = true;
+            DeathAnimation.Activate(true);
             Destroy(gameObject);
             StateController.Lose();
             GameOverText.text = ConversationDatas[current].Options[id].Fail;

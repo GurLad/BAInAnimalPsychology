@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 3704013131642126327}
   - component: {fileID: 3704013131642126312}
   m_Layer: 0
-  m_Name: LegBL
+  m_Name: LegBR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 3704013133002849198}
   - component: {fileID: 3704013133002849199}
   m_Layer: 0
-  m_Name: FootL
+  m_Name: FootR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
