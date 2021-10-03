@@ -54,6 +54,8 @@ MonoBehaviour:
     AudioClip: {fileID: 8300000, guid: b5f5dda0fc2c3e0498c5cfcf564cb058, type: 3}
   - Name: OstrichGame
     AudioClip: {fileID: 8300000, guid: 417fc8c3332b6e247b3ce91dd76fbb4f, type: 3}
+  - Name: EndgameConvo
+    AudioClip: {fileID: 8300000, guid: d30ae4f5da4a1c845b4007d672960cf5, type: 3}
   FadeSpeed: 1
   Volume: 1
   PlayOnStart: 0

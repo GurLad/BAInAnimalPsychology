@@ -862,6 +862,10 @@ PrefabInstance:
       propertyPath: EndTalkAnimation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5652774836835556803, guid: 0e9754c10cffa7b4eae56bec34a6b292, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5652774837676291567, guid: 0e9754c10cffa7b4eae56bec34a6b292, type: 3}
       propertyPath: StateController
       value: 

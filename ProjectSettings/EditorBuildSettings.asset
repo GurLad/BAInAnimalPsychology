@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Endgame.unity
     guid: a40de1d730ad967488ebb47154d6e55f
+  - enabled: 1
+    path: Assets/Scenes/TrueWin.unity
+    guid: 2ae2b0ee5afb7984ebd3ec50fec576c1
   m_configObjects: {}
