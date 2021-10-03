@@ -7,9 +7,10 @@ public class StateController : MonoBehaviour
     private static string state;
     private static StateController current;
     private static Vector3 checkpointPos = Vector3.zero;
+    private static Vector3 checkpointRot = Vector3.zero;
 
     public string LevelName;
-    public GameObject Player;
+    public AnimalController Player;
     [Header("Objects")]
     public List<GameObject> ConversationObjects;
     public List<GameObject> GameObjects;
@@ -38,6 +39,7 @@ public class StateController : MonoBehaviour
         if (checkpointPos != Vector3.zero)
         {
             Player.transform.position = new Vector3(checkpointPos.x, Player.transform.position.y, checkpointPos.z);
+            Player.Rotation = checkpointRot;
         }
     }
 
@@ -46,10 +48,11 @@ public class StateController : MonoBehaviour
         current.GameOver.SetActive(true);
     }
 
-    public static void RegisterCheckpoint(Vector3 pos)
+    public static void RegisterCheckpoint(Vector3 pos, Vector3 rotation)
     {
         checkpointPos = pos;
         checkpointPos.y = 1;
+        checkpointRot = rotation;
         Debug.Log(checkpointPos);
     }
 }

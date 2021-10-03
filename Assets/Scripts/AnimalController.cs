@@ -8,7 +8,7 @@ public abstract class AnimalController : MonoBehaviour
     public float MoveSpeed;
     public AdvancedAnimation WalkAnimation;
     public AdvancedAnimation IdleAnimation;
-    protected Vector3 Rotation;
+    public Vector3 Rotation;
     protected Rigidbody Rigidbody;
     protected virtual void Start()
     {
