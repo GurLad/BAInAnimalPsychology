@@ -11,6 +11,7 @@ public class UpdateLevelNumber : MonoBehaviour
         if (SavedData.Load("LevelNumber", 0) < Number)
         {
             SavedData.Save("LevelNumber", Number);
+            SavedData.SaveAll();
         }
     }
 }
