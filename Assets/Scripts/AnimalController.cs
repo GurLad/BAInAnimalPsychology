@@ -55,4 +55,12 @@ public abstract class AnimalController : MonoBehaviour
             StateController.Lose();
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+            StateController.Lose();
+        }
+    }
 }
