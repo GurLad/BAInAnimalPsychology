@@ -14,7 +14,7 @@ public class RockSpawner : MonoBehaviour
         for (int i = 0; i < Count; i++)
         {
             GameObject rock = Instantiate(Rocks[Random.Range(0, Rocks.Count)]);
-            rock.transform.position = new Vector3(Random.Range(XArea.x, XArea.y), rock.transform.position.y, Random.Range(ZArea.x, ZArea.y));
+            rock.transform.position = new Vector3(Random.Range(XArea.x, XArea.y), transform.position.y, Random.Range(ZArea.x, ZArea.y));
         }
     }
 }
