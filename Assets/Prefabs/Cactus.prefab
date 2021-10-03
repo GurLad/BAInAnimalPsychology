@@ -106,9 +106,10 @@ GameObject:
   - component: {fileID: 3611683031502013017}
   - component: {fileID: 3611683031502013019}
   - component: {fileID: 3611683031502013016}
+  - component: {fileID: 2265986766446365014}
   m_Layer: 0
   m_Name: Model2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,6 +178,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2265986766446365014
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611683031502013014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: a1ec76a5491ac3e408b6b9066ed8962f, type: 3}
 --- !u!1 &6754103006280355919
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,9 +203,10 @@ GameObject:
   - component: {fileID: 3690975825755178110}
   - component: {fileID: 2700509325038478858}
   - component: {fileID: 932760543127120016}
+  - component: {fileID: 4110708365065122279}
   m_Layer: 0
   m_Name: Model1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,6 +275,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4110708365065122279
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754103006280355919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 0b27108ee11b73f4c95eabad25343de1, type: 3}
 --- !u!1001 &6179730178728111085
 PrefabInstance:
   m_ObjectHideFlags: 0

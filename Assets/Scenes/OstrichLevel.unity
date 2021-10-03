@@ -6277,41 +6277,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2099878662729678719, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3630728487637964886, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3867493719602809078, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899568086740269223, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327403570026817244, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5358936339070355737, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5654532219584448563, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7970726507406561307, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 8622756411459950481, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
       propertyPath: m_Name
       value: Ostrich
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622756411459950481, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8622756411459950482, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
       propertyPath: m_RootOrder
@@ -6356,22 +6328,6 @@ PrefabInstance:
     - target: {fileID: 8622756411459950482, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016104515538594702, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016104515714529711, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016104516379226053, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016104517066113682, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f3ccb994d0a80a43b42970d937a95df, type: 3}
