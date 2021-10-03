@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OstrichLevel.unity
     guid: 5388c3822e9cc1845ae2a1a5ba73d2b7
+  - enabled: 1
+    path: Assets/Scenes/OstrichWin.unity
+    guid: e89ebc5c70d880c4888991e325532e08
+  - enabled: 1
+    path: Assets/Scenes/Endgame.unity
+    guid: a40de1d730ad967488ebb47154d6e55f
   m_configObjects: {}
