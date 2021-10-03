@@ -6,8 +6,10 @@ public class StateController : MonoBehaviour
 {
     private static string state;
     private static StateController current;
+    private static Vector3 checkpointPos = Vector3.zero;
 
     public string LevelName;
+    public GameObject Player;
     [Header("Objects")]
     public List<GameObject> ConversationObjects;
     public List<GameObject> GameObjects;
@@ -32,10 +34,22 @@ public class StateController : MonoBehaviour
         ConversationObjects.ForEach(a => a.SetActive(false));
         GameObjects.ForEach(a => a.SetActive(true));
         CrossfadeMusicPlayer.Instance.Play(LevelName + "Game");
+        Debug.Log(checkpointPos);
+        if (checkpointPos != Vector3.zero)
+        {
+            Player.transform.position = new Vector3(checkpointPos.x, Player.transform.position.y, checkpointPos.z);
+        }
     }
 
     public static void Lose()
     {
         current.GameOver.SetActive(true);
+    }
+
+    public static void RegisterCheckpoint(Vector3 pos)
+    {
+        checkpointPos = pos;
+        checkpointPos.y = 1;
+        Debug.Log(checkpointPos);
     }
 }
