@@ -323,16 +323,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: WinText
-      value: Wow, really? I can see you're a true hat lover. I'd love you help!
+      value: Wow, really? I can see you're a true hat lover. I'd love your help!
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: WinTime
-      value: 1
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: WinAudio
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 1dfbe49e4a65b6040ac9429aafe6c66c, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: IdleAnimation
       value: 
@@ -359,7 +359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[0].TalkLength
-      value: 1
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[1].AnimalText
@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[1].TalkLength
-      value: 1
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[2].AnimalText
@@ -375,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[2].TalkLength
-      value: 1
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[3].AnimalText
@@ -383,24 +383,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[3].TalkLength
-      value: 1
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[0].VoiceActing
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 5140f7bcdaa0ff94182ad92bd3a6f912, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[1].VoiceActing
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 59aa69c0e4367f24481a9f2cf2222f34, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[2].VoiceActing
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: c6756a37208aeed46a1a6d98dfa43f37, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[3].VoiceActing
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: c8c3222a4e940474297fba769676ead0, type: 3}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[0].Options.Array.size
       value: 4
@@ -463,7 +463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[2].Options.Array.data[3].Fail
-      value: What are you talking about?
+      value: So?
       objectReference: {fileID: 0}
     - target: {fileID: 49807587260157797, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: ConversationDatas.Array.data[2].Options.Array.data[4].Fail
@@ -601,6 +601,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 4166604112311939195}
+    - target: {fileID: 49807588119131807, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
+      propertyPath: LoseSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 32cca6727638642409819992d530c6e4, type: 3}
     - target: {fileID: 49807588119131807, guid: 1405e7cbdf66282409eb215646d7a312, type: 3}
       propertyPath: LevelName
       value: Ostrich
