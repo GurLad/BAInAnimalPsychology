@@ -11,10 +11,12 @@ public class StateController : MonoBehaviour
 
     public string LevelName;
     public AnimalController Player;
+    public AudioClip LoseSFX;
     [Header("Objects")]
     public List<GameObject> ConversationObjects;
     public List<GameObject> GameObjects;
     public GameObject GameOver;
+    private AudioSource audioSource;
 
     private void Start()
     {
@@ -27,6 +29,7 @@ public class StateController : MonoBehaviour
         {
             CrossfadeMusicPlayer.Instance.Play(LevelName + "Convo");
         }
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void SetStateToGame()
@@ -46,6 +49,7 @@ public class StateController : MonoBehaviour
     public static void Lose()
     {
         current.GameOver.SetActive(true);
+        current.audioSource.PlayOneShot(current.LoseSFX);
     }
 
     public static void RegisterCheckpoint(Vector3 pos, Vector3 rotation)

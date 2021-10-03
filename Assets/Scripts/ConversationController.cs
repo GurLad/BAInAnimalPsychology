@@ -9,10 +9,13 @@ public class ConversationController : MonoBehaviour
     public List<ConversationData> ConversationDatas;
     [TextArea]
     public string WinText;
+    public float WinTime;
+    public AudioClip WinAudio;
     [Header("Animations")]
     public AdvancedAnimation DeathAnimation;
     public AdvancedAnimation IdleAnimation;
     public AdvancedAnimation TalkAnimation;
+    public AdvancedAnimation EndTalkAnimation;
     [Header("Objects")]
     public Text AnimalText;
     public TextButton BaseOption;
@@ -22,9 +25,12 @@ public class ConversationController : MonoBehaviour
     public GameObject WinButton;
     private List<ConversationButton> conversationButtons = new List<ConversationButton>();
     private int current;
+    private AudioSource audioSource;
+    private float count;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         for (int i = 0; i < NumOptions; i++)
         {
             TextButton textButton = Instantiate(BaseOption, BaseOption.transform.parent);
@@ -38,12 +44,33 @@ public class ConversationController : MonoBehaviour
         ShowConversation(0);
     }
 
+    private void Update()
+    {
+        if (count > 0)
+        {
+            count -= Time.deltaTime;
+            if (count <= 0)
+            {
+                TalkAnimation.Active = false;
+                EndTalkAnimation.Activate(true);
+            }
+        }
+    }
+
     private void ShowConversation(int id)
     {
         current = id;
         if (current < ConversationDatas.Count)
         {
             AnimalText.text = ConversationDatas[current].AnimalText;
+            Debug.Log(ConversationDatas[current].VoiceActing.name);
+            audioSource.Stop();
+            audioSource.PlayOneShot(ConversationDatas[current].VoiceActing);
+            if ((count = ConversationDatas[current].TalkLength) > 0)
+            {
+                TalkAnimation.Active = true;
+                EndTalkAnimation.Active = false;
+            }
             for (int i = 0; i < NumOptions; i++)
             {
                 conversationButtons[i].TextButton.Text.text = ConversationDatas[current].Options[i].Option;
@@ -52,11 +79,18 @@ public class ConversationController : MonoBehaviour
         else
         {
             AnimalText.text = WinText;
+            audioSource.Stop();
+            audioSource.PlayOneShot(WinAudio);
+            if ((count = WinTime) > 0)
+            {
+                TalkAnimation.Active = true;
+                EndTalkAnimation.Active = false;
+            }
             for (int i = 0; i < NumOptions; i++)
             {
                 conversationButtons[i].gameObject.SetActive(false);
             }
-            Destroy(this);
+            //Destroy(this);
             WinButton.SetActive(true);
         }
     }
@@ -71,6 +105,7 @@ public class ConversationController : MonoBehaviour
         {
             IdleAnimation.Active = false;
             TalkAnimation.Active = false;
+            EndTalkAnimation.Active = false;
             DeathAnimation.Active = true;
             Destroy(gameObject);
             StateController.Lose();
