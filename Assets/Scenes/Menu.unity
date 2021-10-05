@@ -406,7 +406,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Ludum Dare 49
 
-    V. 1.0, by Gur Ladizhinsky'
+    V. 1.1, by Gur Ladizhinsky'
 --- !u!222 &365460393
 CanvasRenderer:
   m_ObjectHideFlags: 0
